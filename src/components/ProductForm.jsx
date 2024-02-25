@@ -79,12 +79,13 @@ function ProductForm() {
   return (
     <Container className="mt-5">
       <Row className="justify-content-md-center">
+      <h3 style={{textAlign: 'center'}}>Enter Product Name to extract its info or product image to extract text from it</h3>
         <Col md={6}>
           <Card>
             <Card.Body>
               <Form>
                 <Form.Group controlId="productName" className="mb-3">
-                  <Form.Label>Product Name:</Form.Label>
+                  <Form.Label style={{fontWeight: 'bold'}}>Product Name:</Form.Label>
                   <Form.Control
                     type="text"
                     value={productName}
@@ -96,7 +97,7 @@ function ProductForm() {
                 </Form.Group>
 
                 <Form.Group controlId="productImage" className="mb-3">
-                  <Form.Label>Product Image:</Form.Label>
+                  <Form.Label style={{fontWeight: 'bold'}}>Product Image:</Form.Label>
                   <Form.Control type="file" onChange={productImageHandler} accept="image/*" />
                 </Form.Group>
 
