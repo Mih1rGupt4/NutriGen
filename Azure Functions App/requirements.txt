@@ -1,0 +1,14 @@
+# DO NOT include azure-functions-worker in this file
+# The Python Worker is managed by Azure Functions platform
+# Manually managing azure-functions-worker may cause unexpected issues
+
+azure-functions
+azure-storage-file-share
+openai==1.8.0
+numpy
+scikit-learn==1.2.0
+azure-data-tables
+python-multipart
+pillow
+azure-ai-vision-imageanalysis
+azure-cognitiveservices-vision-computervision

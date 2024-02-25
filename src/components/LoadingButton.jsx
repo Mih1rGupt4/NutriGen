@@ -1,7 +1,13 @@
-import ClipLoader from "react-spinners/ClipLoader";
+import { Row } from 'react-bootstrap';
+import Spinner from 'react-bootstrap/Spinner';
+
 function LoadingButton() {
     return (
-        <button id='loading'> <ClipLoader color="#03990b" size="12px"/>Loading..</button>
+        <Row className="justify-content-center">
+            <Spinner animation="grow" variant="success" className="justify-content-center">
+                <span className="visually-hidden">Loading...</span>
+            </Spinner>
+        </Row>
     );
 }
 
